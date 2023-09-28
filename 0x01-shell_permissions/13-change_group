@@ -1,2 +1,4 @@
 #!/bin/bash
-chgrp holberton hello
+
+[ -e "hello" ] && chown :school hello && echo "Group owner of 'hello' changed to 'school'." || echo "File 'hello' does not exist."
+
