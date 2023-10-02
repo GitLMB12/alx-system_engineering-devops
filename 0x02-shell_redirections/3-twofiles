@@ -1,9 +1,3 @@
 #!/bin/bash
-echo "##"
-echo "# User Database"
-echo "#"
 cat /etc/passwd
-echo "##"
-echo "# Host database"
-echo "#"
 cat /etc/hosts
