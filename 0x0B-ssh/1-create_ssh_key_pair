@@ -1,4 +1,4 @@
 #!/usr/bin/ env bash 
 # ssh keys pairs
 
-ssh-keygen -t rsa -b 4096 -P betty -f ~/.ssh/school
+ssh-keygen -b 4096 -f school -N betty
