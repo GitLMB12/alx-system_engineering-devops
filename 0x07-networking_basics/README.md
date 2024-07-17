@@ -1,43 +1,76 @@
-Introduction to Networking Basics
-Welcome to the Introduction to Networking Basics repository! This repository serves as a beginner-friendly guide to understanding the fundamentals of computer networking. Whether you're a student, an aspiring network engineer, or simply curious about how the internet works, this guide aims to provide you with a solid foundation in networking concepts.
+# Networking basics #0
 
-What is Networking?
-Networking is the practice of connecting computers and other devices together to share resources and communicate with each other. It forms the backbone of the modern internet, enabling data transfer, communication, and collaboration on a global scale.
+This project was the first of two introducing networking concepts. In this
+project, I answered a few quiz-like questions and wrote a couple bash scripts
+while learning about the OSI model, LAN and WAN networks, and TCP/UDP data
+transfer protocols.
 
-Why Learn Networking Basics?
-Understanding networking basics is crucial in today's interconnected world for several reasons:
+## Tasks :page_with_curl:
 
-Career Opportunities: Proficiency in networking opens up various career opportunities in fields such as network administration, cybersecurity, telecommunications, and cloud computing.
+* **0. OSI model**
+  * [0-OSI_model](./0-OSI_model): Text file answering the following questions:
+  * What is the OSI model?
+    1. Set of specifications that network hardware manufacturers must respect
+    2. The OSI model is a conceptual model that characterizes the communication
+    functions of a telecommunication system without regard to their underlying
+    internal structure and technology.
+    3. The OSI model is a model that characterizes the communication functions
+    of a telecommunication system with a strong regard for their underlying
+    internal structure and technology.
+  * How is the OSI model organized?
+    1. Alphabetically
+    2. From the lowest to the highest level
+    3. Randomly
 
-Troubleshooting: Knowledge of networking fundamentals allows you to troubleshoot common connectivity issues, whether at home or in a professional environment.
+* **1. Types of network**
+  * [1-types_of_network](./1-types_of_network): Text file answering the following questions:
+  * What type of network a computer in local is connected to?
+    1. Internet
+    2. WAN
+    3. LAN
+  * What type of network could connect an office in one building to another
+  office in a building a few streets away?
+    1. Internet
+    2. WAN
+    3. LAN
+  * What network do you use when you browse www.google.com from your
+  smartphone (not connected to the Wifi)?
+    1. Internet
+    2. WAN
+    3. LAN
 
-Improved Collaboration: Understanding how networks function enhances your ability to collaborate effectively in team settings, especially in IT departments or software development teams.
+* **2. MAC and IP address**
+  * [2-MAC_and_IP_address](./2-MAC_and_IP_address): Text file answering the following questions:
+  * What is a MAC address?
+    1. The name of a network interface
+    2. The unique identifier of a network interface
+    3. A network interface
+  * What is an IP address?
+    1. Is to devices connected to a network what postal address is to houses
+    2. The unique identifier of a network interface
+    3. Is a number that network devices use to connect to networks
 
-Personal Empowerment: With networking knowledge, you can set up your home network, configure devices, and optimize performance, giving you greater control over your digital environment.
+* **3. UDP and TCP**
+  * [3-UDP_and_TCP](./3-UDP_and_TCP): Text file answering the following questions
+  (boxes refer to an image provided by ALX):
+  * Which statement is correct for the TCP box:
+    1. It is a protocol that is transferring data in a slow way but surely
+    2. It is a protocol that is transferring data in a fast way and might loss
+    data along in the process
+  * Which statement is correct for the UDP box:
+    1. It is a protocol that is transferring data in a slow way but surely
+    2. It is a protocol that is transferring data in a fast way and might loss
+    data along in the process
+  * Which statement is correct for the TCP worker:
+    1. Have you received boxes x, y, z?
+    2. May I increase the rate at which I am sending you boxes?
 
-What This Guide Covers
-This guide is designed to cover the following key networking topics:
+* **4. TCP and UDP ports**
+  * [4-TCP_and_UDP_ports](./4-TCP_and_UDP_ports): Bash script that displays listening ports.
+  * Only shows listening sockets.
+  * Displays the PID and name of the program to which each socket belongs.
 
-Introduction to Networks: Understanding the basics of networks, including types of networks, network topologies, and the OSI model.
-
-Networking Devices: Exploring common networking devices such as routers, switches, hubs, and modems, and their roles in network communication.
-
-IP Addressing: Learning about IP addressing, subnetting, and the difference between IPv4 and IPv6.
-
-Networking Protocols: Explaining fundamental networking protocols like TCP/IP, UDP, HTTP, DNS, DHCP, and FTP.
-
-Network Security: Introducing basic network security concepts, including firewalls, encryption, VPNs, and best practices for securing networks.
-
-How to Use This Guide
-This guide is structured to be beginner-friendly, with each topic building upon the previous one. Whether you're reading through sequentially or jumping to specific sections, you'll find explanations, examples, and practical tips to reinforce your understanding.
-
-Each section includes:
-
-Overview: A brief introduction to the topic.
-Key Concepts: The fundamental concepts you need to grasp.
-Examples: Illustrative examples to clarify the concepts.
-Practical Exercises: Hands-on exercises to apply what you've learned.
-Further Reading: Additional resources for deeper exploration.
-Feel free to explore at your own pace and don't hesitate to reach out if you have any questions or need clarification on any topic.
-
-Happy learning!
+* **5. Is the host on the network**
+  * [5-is_the_host_on_the_network](./5-is_the_host_on_the_network): Bash script that
+  pings an IP address received as an argument 5 times.
+  * Usage: `5-is_the_host_on_the_network {IP_ADDRESS}`.

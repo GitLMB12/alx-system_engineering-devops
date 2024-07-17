@@ -1,35 +1,54 @@
-# Regular Expression Project README
+# Regular expression
 
-## Background Context
+In this project, I learned how to use regular expressions. I practiced building
+them using Ruby's Oniguruma library.
 
-For this project, you will be utilizing Oniguruma, a regular expression library that is the default for Ruby. It's essential to note that different regular expression libraries may have different properties and behaviors.
+All code in this directory was tested using [Rubular](https://rubular.com/). Rubular is a Ruby-based regular expression editor. It's a handy way to test regular expressions as you write them.
 
-The primary focus of this exercise is to work with regular expressions (regex). The provided Ruby code framework requires you to replace the regular expression pattern (regexp) to achieve the desired functionality.
+## Tasks :page_with_curl:
 
-## Instructions
+_Note: Each Ruby script in the project matches regular expressions based on an
+argument passed to it via the command line._
 
-To complete this project, follow these steps:
+* **0. Simply matching School**
+  * [0-simply_match_school.rb](./0-simply_match_school.rb): Ruby script that
+  matches the regular expression `School`.
 
-1. **Understand the Objective**: First, make sure you understand the objective or the problem you're trying to solve using regular expressions.
+* **1. Repetition Token #0**
+  * [1-repetition_token_0.rb](./1-repetition_token_0.rb): Ruby script that matches
+  the regular expression `hbn` with between 2-5 `t`'s in between `hb` and `n`.
 
-2. **Review the Provided Ruby Code**: Take a look at the provided Ruby code. You'll notice a placeholder for the regular expression pattern (regexp) indicated by `//*:`. This is where you'll insert your regular expression.
+* **2. Repetition Token #1**
+  * [2-repetition_token_1.rb](./2-repetition_token_1.rb): Ruby script that matches
+  the regular expression `hn` with 0 or 1 occurrences of `b` and 0 or 1
+  occurrences of `t` in between `h` and `n`.
 
-3. **Build Your Regular Expression**: Using your knowledge of regular expressions and considering the problem at hand, construct a regular expression pattern that matches the desired text patterns.
+* **3. Repetition Token #2**
+  * [3-repetition_token_2.rb](./3-repetition_token_2.rb): Ruby script that matches
+  the regular expression `hbn` with 1 or more `t`'s in between `hb` and `n`.
 
-4. **Replace the Regular Expression Placeholder**: Once you've built your regular expression, replace the placeholder `//*:` in the provided Ruby code with your regular expression.
+* **4. Repetition Token #3**
+  * [4-repetition_token_3.rb](./4-repetition_token_3.rb): Ruby script that matches the
+  regular expression `hbn` with 0 or more `t`'s in between `hb` and `n`.
 
-5. **Test Your Solution**: Test your solution with different inputs to ensure that your regular expression behaves as expected and correctly matches the intended patterns.
+* **5. Not quite HBTN yet**
+  * [5-beginning_and_end.rb](./5-beginning_and_end.rb): Ruby script that matches a
+  regular expression starting with `h` and ending with `n` with any single character in between.
 
-6. **Refine and Iterate**: If necessary, refine your regular expression and repeat the testing process until you're satisfied with the results.
+* **6. Call me maybe**
+  * [6-phone_number.rb](./6-phone_number.rb): Ruby script that matches a regular expression
+  representing a 10-digit phone number.
 
-7. **Documentation**: Ensure your code is well-documented, providing comments where necessary to explain the purpose and functionality of your regular expression.
+* **7. OMG WHY ARE YOU SHOUTING?**
+  * [7-OMG_WHY_ARE_YOU_SHOUTING.rb](./7-OMG_WHY_ARE_YOU_SHOUTING.rb): Ruby script that
+  matches regular expressions of uppercase letters.
 
-8. **Submission**: Once you're confident with your solution, submit your code along with any additional documentation as required.
-
-## Additional Notes
-
-- Take advantage of resources available online to learn more about regular expressions and their syntax.
-- Experiment with different regular expression patterns and test them thoroughly to understand their behavior.
-- Remember that regular expressions can be powerful tools but may also have limitations and edge cases to consider.
-
-
+* **8. Textme**
+  * [100-textme.rb](./100-textme.rb): Ruby script that runs statistics on TextMe app text
+  message transcations.
+  * Output: `[SENDER],[RECEIVER],[FLAGS]` where
+    * `[SENDER]` is the sender phone number or name (including country code
+    if present).
+    * `[RECEIVER]` is the receiver phone number or name (including country code
+    if present).
+    * `[FLAGS]` is the flags that were used.

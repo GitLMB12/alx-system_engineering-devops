@@ -7,25 +7,18 @@
 #   Deletes the file /var/run/myscript.pid and terminates upon
 #+  receiving a SIGQUIT or SIGTERM.
 
-#!/bin/bash
-
-# Function to print a termination message and cleanup
-cleanup() {
-  echo "Cleaning up and exiting..."
+terminator() {
   rm /var/run/myscript.pid
   exit
 }
 
-# Write the script's PID to the PID file
 echo "$$" > /var/run/myscript.pid
 
-# Set up signal handlers for SIGINT, SIGTERM, and SIGQUIT
-trap 'echo "Y U no love me?!"' SIGINT
-trap 'echo "I hate the kill command"; cleanup' SIGTERM
-trap 'cleanup' SIGQUIT
-
-# Run indefinitely
-while true; do
+while true
+do
   echo "To infinity and beyond"
   sleep 2
+  trap 'echo "Y U no love me?!"' SIGINT
+  trap 'echo "I hate the kill command" && terminator' SIGTERM
+  trap 'terminator' SIGQUITgit 
 done

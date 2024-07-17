@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
-# Description: Pings an IP address passed as an argument
-if [ "$#" != 1 ]; then
-	echo "Error: Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
-	exit 1
+# Pings an IP address received as a string argument 5 times.
+
+if [ "$#" -eq 0 ]
+then
+  echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+else
+  ping -c 5 "$1"
 fi
-if ! [[ $1 =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-	echo "Error: '$1' is not a valid IP address"
-	exit 1
-fi
-ping -c 5 "$1"
